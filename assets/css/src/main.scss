@@ -13,56 +13,56 @@
 
 // Generic Styles
 
-// .header {
-// 	display: flex;
-// 	flex-direction: row;
-// 	flex-wrap: wrap;
-// 	width: 100%;
-// 	justify-content: space-between;
-// 	&-block {
-// 		flex-wrap: wrap;
-// 		display: flex;
-// 		flex-direction: column;
-// 		justify-content: center;
-// 		height: 100%;
-// 		align-self: center;
-// 	}
-// 	&-wrap {
-// 		height: 90vh;
-// 		width: 100vw;
-// 		color: $black;
-// 		background-image: url('https://unsplash.it/1500/1500?image=871');
-// 		background-origin: border-box;
-// 		background-clip: border-box;
-// 		background-size: cover;
-// 		background-repeat: no-repeat;
-// 		display: flex;
-// 		flex-wrap: wrap;
-// 		flex-direction: column;
-// 		justify-content: center;
-// 	}
-// 	&-image {
-// 		align-self: center;
-// 		&-pic {
-// 			border-top-right-radius: 50%;
-// 			border-bottom-left-radius: 50%;
-// 			box-shadow: 0 0 1em #D1E2FB;
-// 		}
-// 	}
-// 	&-name,
-// 	&-lead {
-// 		background-color: $white;
-// 		padding: 0.5em;
-// 		box-shadow: 0 0 1em #D1E2FB;
-// 	}
-// }
+.header {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: space-between;
+	&-block {
+		flex-wrap: wrap;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: 100%;
+		align-self: center;
+	}
+	&-wrap {
+		height: 90vh;
+		width: 100vw;
+		color: $black;
+		background-image: url('https://unsplash.it/1500/1500?image=871');
+		background-origin: border-box;
+		background-clip: border-box;
+		background-size: cover;
+		background-repeat: no-repeat;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: center;
+	}
+	&-image {
+		align-self: center;
+		&-pic {
+			border-top-right-radius: 50%;
+			border-bottom-left-radius: 50%;
+			box-shadow: 0 0 1em #D1E2FB;
+		}
+	}
+	&-name,
+	&-lead {
+		background-color: $white;
+		padding: 0.5em;
+		box-shadow: 0 0 1em #D1E2FB;
+	}
+}
 .page {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
-.footer-wrap, .main-wrap, .header-wrap {
-  // margin: 0 auto;
+.header, .main, .footer {
+  margin: 0 auto;
   @include phone {
       width: 100vw;
   }
@@ -79,7 +79,6 @@
       width: 60vw;
   }
 }
-
 .main-wrap {
 	background-color: $white;
 	color: $black;
