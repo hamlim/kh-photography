@@ -15,8 +15,7 @@
 
 .header {
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+  flex-flow: row wrap;
 	width: 100%;
 	justify-content: space-between;
 	&-block {
@@ -28,10 +27,11 @@
 		align-self: center;
 	}
 	&-wrap {
+    position: relative;
 		height: 90vh;
 		width: 100vw;
 		color: $black;
-		background-image: url('https://unsplash.it/1500/1500?image=871');
+		background: url('https://unsplash.it/1500/1500?image=827'), $blue1;
 		background-origin: border-box;
 		background-clip: border-box;
 		background-size: cover;
@@ -40,6 +40,15 @@
 		flex-wrap: wrap;
 		flex-direction: column;
 		justify-content: center;
+    &:after{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      content: '\00a9 Kyle Hamlin Photography';
+      color: $white;
+      font-size: 80%;
+      opacity: 0.3;
+    }
 	}
 	&-image {
 		align-self: center;
@@ -59,7 +68,6 @@
 .page {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 }
 .header, .main, .footer {
   margin: 0 auto;
@@ -80,10 +88,40 @@
   }
 }
 .main-wrap {
+  flex-grow: 2;
 	background-color: $white;
 	color: $black;
 }
 .footer-wrap {
 	color: $black;
-	// align-self: flex-end;
+  & h4 {
+    margin: 0;
+  }
+}
+
+.main {
+  &-wrap {
+    flex-grow: 2;
+    background-color: $white;
+    color: $black;
+  }
+  &-nav {
+    height: 10vh;
+    line-height: 10vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    & h3 {
+      display: inline-block;
+    }
+  }
+}
+
+#about, #resume, #contact {
+  display: none;
+}
+#about:target,
+#resume:target,
+#contact:target {
+  display: block;
 }

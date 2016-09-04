@@ -21535,104 +21535,73 @@
 					"main",
 					{ className: "main" },
 					_react2.default.createElement(
+						"nav",
+						{ className: "main-nav" },
+						_react2.default.createElement(
+							"h3",
+							null,
+							_react2.default.createElement(
+								"a",
+								{ href: "#", className: "link" },
+								"Home"
+							)
+						),
+						_react2.default.createElement(
+							"h3",
+							null,
+							_react2.default.createElement(
+								"a",
+								{ href: "#about", className: "link" },
+								"About Me"
+							)
+						),
+						_react2.default.createElement(
+							"h3",
+							null,
+							_react2.default.createElement(
+								"a",
+								{ href: "#resume", className: "link" },
+								"My Resume"
+							)
+						),
+						_react2.default.createElement(
+							"h3",
+							null,
+							_react2.default.createElement(
+								"a",
+								{ href: "#contact", className: "link" },
+								"Contact Me"
+							)
+						)
+					),
+					_react2.default.createElement(
 						"article",
 						{ className: "article" },
 						_react2.default.createElement(
 							"section",
-							{ className: "lead" },
+							{ id: "about" },
 							_react2.default.createElement(
-								"h3",
+								"h1",
 								null,
-								"About boilerplate:"
-							),
-							_react2.default.createElement(
-								"p",
-								null,
-								"I made boilerplate to satisfy my need for a basic default when I want to start a website. Before this I had worked on Basi.css which was really just a custom css file that could be dropped into any project and would help with prototyping. boilerplate is a bit different, it serves as the default, so you can pull in boilerplate when starting and build your site around it. The css is all meant to be hacked on and extended, the defaults are all really primative also. (Heck the reset's are just setting every element to ",
-								_react2.default.createElement(
-									"code",
-									null,
-									"box-sizing: border-box"
-								),
-								" and setting ",
-								_react2.default.createElement(
-									"code",
-									null,
-									"margin: 0; padding: 0"
-								),
-								".)"
-							),
-							_react2.default.createElement(
-								"p",
-								null,
-								"This is still very early on in it's lifecycle, so if you notice any issues that should be fixed, or have some additions to add to the project that submit a pull request ",
-								_react2.default.createElement(
-									"a",
-									{ className: "link", href: "https://github.com/hamlim/boilerplate" },
-									"here."
-								)
+								"About Me"
 							)
 						),
 						_react2.default.createElement(
 							"section",
-							{ className: "opinionated" },
+							{ id: "resume" },
 							_react2.default.createElement(
-								"h3",
+								"h1",
 								null,
-								"Opinionated:"
-							),
-							_react2.default.createElement(
-								"p",
-								null,
-								"Lets get one thing clear, if you are using this project to start a website, you should know that this is very opinionated."
+								"My Resume"
 							)
 						),
 						_react2.default.createElement(
 							"section",
-							{ className: "how-to" },
+							{ id: "contact" },
 							_react2.default.createElement(
-								"h3",
+								"h1",
 								null,
-								"How do I use it?"
-							),
-							_react2.default.createElement(
-								"p",
-								null,
-								"Well to be honest I am not 100% sure, I think you can simply clone this ",
-								_react2.default.createElement(
-									"a",
-									{ href: "https://github.com/hamlim/boilerplate", className: "link" },
-									"repository"
-								),
-								" and then run:"
-							),
-							_react2.default.createElement(
-								"pre",
-								null,
-								_react2.default.createElement(
-									"code",
-									null,
-									"npm install"
-								)
-							),
-							_react2.default.createElement(
-								"p",
-								null,
-								"and follow that with a "
-							),
-							_react2.default.createElement(
-								"pre",
-								null,
-								_react2.default.createElement(
-									"code",
-									null,
-									"npm run webpack"
-								)
-							),
-							_react2.default.createElement(
-								"p",
-								null,
-								"but I am really not sure. ¯\\_(ツ)_/¯"
+								"Contact Me"
 							)
 						)
 					)
@@ -21661,8 +21630,8 @@
 					"footer",
 					{ className: "footer" },
 					_react2.default.createElement(
-						"p",
-						{ className: "escape--default" },
+						"h4",
+						{ className: "" },
 						"© 2016 ",
 						_react2.default.createElement(
 							"a",
@@ -21714,7 +21683,7 @@
 	
 	
 	// module
-	exports.push([module.id, "*,\n*:before,\n*:after {\n  padding: 0;\n  margin: 0;\n  box-sizing: border-box; }\n\n/* Mobile first queries */\n/* Larger than mobile */\n/* Larger than phablet */\n/* Larger than tablet */\n/* Larger than desktop */\n/* Larger than Desktop HD */\n.grid {\n  display: flex; }\n  .grid-row {\n    flex-direction: row; }\n  .grid-column {\n    flex-direction: column; }\n  .grid-row-reverse {\n    flex-direction: row-reverse; }\n  .grid-column-reverse {\n    flex-direction: column-reverse; }\n  .grid-wrap {\n    flex-wrap: wrap; }\n  .grid-nowrap {\n    flex-wrap: nowrap; }\n  .grid-wrap-reverse {\n    flex-wrap: wrap-reverse; }\n  .grid-justify-start {\n    justify-content: flex-start; }\n  .grid-justify-end {\n    justify-content: flex-end; }\n  .grid-justify-center {\n    justify-content: center; }\n  .grid-justify-between {\n    justify-content: space-between; }\n  .grid-justify-around {\n    justify-content: space-around; }\n  .grid-align-items-start {\n    align-items: flex-start; }\n  .grid-align-items-end {\n    align-items: flex-end; }\n  .grid-align-items-center {\n    align-items: center; }\n  .grid-align-items-stretch {\n    align-items: stretch; }\n  .grid-align-items-baseline {\n    align-items: baseline; }\n  .grid-align-content-start {\n    align-content: flex-start; }\n  .grid-align-content-end {\n    align-content: flex-end; }\n  .grid-align-content-center {\n    align-content: center; }\n  .grid-align-content-stretch {\n    align-content: stretch; }\n  .grid-align-content-between {\n    align-content: space-between; }\n  .grid-align-content-around {\n    align-content: space-around; }\n\n.item-align-start {\n  align-self: flex-start; }\n\n.item-align-end {\n  align-self: flex-end; }\n\n.item-align-center {\n  align-self: center; }\n\n.item-align-baseline {\n  align-self: baseline; }\n\n.item-align-stretch {\n  align-self: stretch; }\n\na {\n  text-decoration: none; }\n  a:hover, a:active {\n    text-decoration: none; }\n\n.link {\n  color: #2ECC71; }\n  .link:hover {\n    color: #F7CA18; }\n  .link--active {\n    color: #F5CBA7; }\n  .link--special {\n    color: #59ABE3; }\n    .link--special:hover {\n      color: #F9690E; }\n\nhtml {\n  font-size: calc(0.75em + 1vw);\n  line-height: 1;\n  font-family: \"Roboto\", sans-serif;\n  font-weight: 300; }\n  @media screen and (min-width: 16.667em) {\n    html {\n      line-height: 1.1; } }\n  @media screen and (min-width: 22.197em) {\n    html {\n      line-height: 1.2; } }\n  @media screen and (min-width: 31.25em) {\n    html {\n      line-height: 1.4; } }\n  @media screen and (min-width: 41.667em) {\n    html {\n      line-height: 1.5; } }\n  @media screen and (min-width: 50em) {\n    html {\n      line-height: 1.6; } }\n\nh1 {\n  font-weight: 400; }\n  h1:not(.escape--default) {\n    font-size: calc(calc(0.75em + 1vw) * 1.7); }\n\nh2 {\n  font-weight: 400; }\n  h2:not(.escape--default) {\n    font-size: calc(calc(0.75em + 1vw) * 1.4); }\n\nh3 {\n  font-weight: 400; }\n  h3:not(.escape--default) {\n    font-size: calc(calc(0.75em + 1vw) * 1.1); }\n\nh4 {\n  font-weight: 400; }\n  h4:not(.escape--default) {\n    font-size: calc(calc(0.75em + 1vw) * 0.7); }\n\nh5 {\n  font-weight: 400; }\n  h5:not(.escape--default) {\n    font-size: calc(calc(0.75em + 1vw) * 0.5); }\n\nh6 {\n  font-weight: 400; }\n  h6:not(.escape--default) {\n    font-size: calc(calc(0.75em + 1vw) * 0.3); }\n\nsmall:not(.escape--default) {\n  font-size: calc(calc(0.75em + 1vw) * 0.2); }\n\ni:not(.escape--default), em:not(.escape--default) {\n  font-style: italic; }\n\ni.escape--default, em.escape--default {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: inherit;\n  font: inherit;\n  vertical-align: baseline; }\n\nh1:not(.escape--default), h2:not(.escape--default), h3:not(.escape--default), h4:not(.escape--default), h5:not(.escape--default), h6:not(.escape--default), small:not(.escape--default), p:not(.escape--default), ul:not(.escape--default), ol:not(.escape--default) {\n  margin-bottom: 1em; }\n\nh1.escape--default, h2.escape--default, h3.escape--default, h4.escape--default, h5.escape--default, h6.escape--default, small.escape--default, p.escape--default, ul.escape--default, ol.escape--default {\n  padding: 0 0 .25em 0;\n  margin: 0;\n  border: 0;\n  font-size: inherit;\n  font: inherit;\n  vertical-align: baseline; }\n\nul:not(.escape--default), ol:not(.escape--default) {\n  list-style-position: inside; }\n\npre {\n  font-size: 70%;\n  position: relative;\n  margin-bottom: 1em;\n  border-right: solid 4px #A9DFBF;\n  border-left: solid 4px #A9DFBF;\n  font-family: \"Space Mono\", monospace;\n  background-color: #F2F1EF;\n  padding: 0 3em 0 1em; }\n  pre:after {\n    content: attr(data-lang);\n    position: absolute;\n    right: 0;\n    top: 0;\n    padding: 0 0.25em 0.25em 0.25em;\n    color: black;\n    background-color: #ccc;\n    z-index: 2;\n    border-bottom-left-radius: 4px; }\n  pre.inline-block {\n    padding: 0.25em;\n    display: inline-block; }\n    pre.inline-block:after {\n      display: none; }\n\nkbd, var {\n  font-family: \"Questrial\", sans-serif;\n  background-color: #D5DBDB;\n  color: #000;\n  font-size: 90%; }\n  kbd:not(.escape--defaults), var:not(.escape--defaults) {\n    font-family: \"Space Mono\", monospace;\n    background-color: #ccc;\n    border-radius: 0.25em;\n    color: #000;\n    font-size: 90%;\n    padding-top: 0.1em;\n    padding-bottom: 0.1em;\n    display: inline-block; }\n\nsup {\n  vertical-align: super;\n  font-size: smaller; }\n\n.tac {\n  text-align: center; }\n\n.header {\n  display: flex;\n  flex-direction: row;\n  flex-wrap: wrap;\n  width: 100%;\n  justify-content: space-between; }\n  .header-block {\n    flex-wrap: wrap;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    height: 100%;\n    align-self: center; }\n  .header-wrap {\n    height: 90vh;\n    width: 100vw;\n    color: #000;\n    background-image: url(\"https://unsplash.it/1500/1500?image=871\");\n    background-origin: border-box;\n    background-clip: border-box;\n    background-size: cover;\n    background-repeat: no-repeat;\n    display: flex;\n    flex-wrap: wrap;\n    flex-direction: column;\n    justify-content: center; }\n  .header-image {\n    align-self: center; }\n    .header-image-pic {\n      border-top-right-radius: 50%;\n      border-bottom-left-radius: 50%;\n      box-shadow: 0 0 1em #D1E2FB; }\n  .header-name, .header-lead {\n    background-color: #fff;\n    padding: 0.5em;\n    box-shadow: 0 0 1em #D1E2FB; }\n\n.page {\n  display: flex;\n  flex-direction: column;\n  justify-content: center; }\n\n.header, .main, .footer {\n  margin: 0 auto; }\n  @media screen and (min-width: 16.667em) {\n    .header, .main, .footer {\n      width: 100vw; } }\n  @media screen and (min-width: 22.197em) {\n    .header, .main, .footer {\n      width: 90vw; } }\n  @media screen and (min-width: 31.25em) {\n    .header, .main, .footer {\n      width: 85vw; } }\n  @media screen and (min-width: 41.667em) {\n    .header, .main, .footer {\n      width: 70vw; } }\n  @media screen and (min-width: 50em) {\n    .header, .main, .footer {\n      width: 60vw; } }\n\n.main-wrap {\n  background-color: #fff;\n  color: #000; }\n\n.footer-wrap {\n  color: #000; }\n", ""]);
+	exports.push([module.id, "*,\n*:before,\n*:after {\n  padding: 0;\n  margin: 0;\n  box-sizing: border-box; }\n\n/* Mobile first queries */\n/* Larger than mobile */\n/* Larger than phablet */\n/* Larger than tablet */\n/* Larger than desktop */\n/* Larger than Desktop HD */\n.grid {\n  display: flex; }\n  .grid-row {\n    flex-direction: row; }\n  .grid-column {\n    flex-direction: column; }\n  .grid-row-reverse {\n    flex-direction: row-reverse; }\n  .grid-column-reverse {\n    flex-direction: column-reverse; }\n  .grid-wrap {\n    flex-wrap: wrap; }\n  .grid-nowrap {\n    flex-wrap: nowrap; }\n  .grid-wrap-reverse {\n    flex-wrap: wrap-reverse; }\n  .grid-justify-start {\n    justify-content: flex-start; }\n  .grid-justify-end {\n    justify-content: flex-end; }\n  .grid-justify-center {\n    justify-content: center; }\n  .grid-justify-between {\n    justify-content: space-between; }\n  .grid-justify-around {\n    justify-content: space-around; }\n  .grid-align-items-start {\n    align-items: flex-start; }\n  .grid-align-items-end {\n    align-items: flex-end; }\n  .grid-align-items-center {\n    align-items: center; }\n  .grid-align-items-stretch {\n    align-items: stretch; }\n  .grid-align-items-baseline {\n    align-items: baseline; }\n  .grid-align-content-start {\n    align-content: flex-start; }\n  .grid-align-content-end {\n    align-content: flex-end; }\n  .grid-align-content-center {\n    align-content: center; }\n  .grid-align-content-stretch {\n    align-content: stretch; }\n  .grid-align-content-between {\n    align-content: space-between; }\n  .grid-align-content-around {\n    align-content: space-around; }\n\n.item-align-start {\n  align-self: flex-start; }\n\n.item-align-end {\n  align-self: flex-end; }\n\n.item-align-center {\n  align-self: center; }\n\n.item-align-baseline {\n  align-self: baseline; }\n\n.item-align-stretch {\n  align-self: stretch; }\n\na {\n  text-decoration: none; }\n  a:hover, a:active {\n    text-decoration: none; }\n\n.link {\n  color: #2ECC71; }\n  .link:hover {\n    color: #F7CA18; }\n  .link--active {\n    color: #F5CBA7; }\n  .link--special {\n    color: #59ABE3; }\n    .link--special:hover {\n      color: #F9690E; }\n\nhtml {\n  font-size: calc(0.75em + 1vw);\n  line-height: 1;\n  font-family: \"Roboto\", sans-serif;\n  font-weight: 300; }\n  @media screen and (min-width: 16.667em) {\n    html {\n      line-height: 1.1; } }\n  @media screen and (min-width: 22.197em) {\n    html {\n      line-height: 1.2; } }\n  @media screen and (min-width: 31.25em) {\n    html {\n      line-height: 1.4; } }\n  @media screen and (min-width: 41.667em) {\n    html {\n      line-height: 1.5; } }\n  @media screen and (min-width: 50em) {\n    html {\n      line-height: 1.6; } }\n\nh1 {\n  font-weight: 400; }\n  h1:not(.escape--default) {\n    font-size: calc(calc(0.75em + 1vw) * 1.7); }\n\nh2 {\n  font-weight: 400; }\n  h2:not(.escape--default) {\n    font-size: calc(calc(0.75em + 1vw) * 1.4); }\n\nh3 {\n  font-weight: 400; }\n  h3:not(.escape--default) {\n    font-size: calc(calc(0.75em + 1vw) * 1.1); }\n\nh4 {\n  font-weight: 400; }\n  h4:not(.escape--default) {\n    font-size: calc(calc(0.75em + 1vw) * 0.7); }\n\nh5 {\n  font-weight: 400; }\n  h5:not(.escape--default) {\n    font-size: calc(calc(0.75em + 1vw) * 0.5); }\n\nh6 {\n  font-weight: 400; }\n  h6:not(.escape--default) {\n    font-size: calc(calc(0.75em + 1vw) * 0.3); }\n\nsmall:not(.escape--default) {\n  font-size: calc(calc(0.75em + 1vw) * 0.2); }\n\ni:not(.escape--default), em:not(.escape--default) {\n  font-style: italic; }\n\ni.escape--default, em.escape--default {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: inherit;\n  font: inherit;\n  vertical-align: baseline; }\n\nh1:not(.escape--default), h2:not(.escape--default), h3:not(.escape--default), h4:not(.escape--default), h5:not(.escape--default), h6:not(.escape--default), small:not(.escape--default), p:not(.escape--default), ul:not(.escape--default), ol:not(.escape--default) {\n  margin-bottom: 1em; }\n\nh1.escape--default, h2.escape--default, h3.escape--default, h4.escape--default, h5.escape--default, h6.escape--default, small.escape--default, p.escape--default, ul.escape--default, ol.escape--default {\n  padding: 0 0 .25em 0;\n  margin: 0;\n  border: 0;\n  font-size: inherit;\n  font: inherit;\n  vertical-align: baseline; }\n\nul:not(.escape--default), ol:not(.escape--default) {\n  list-style-position: inside; }\n\npre {\n  font-size: 70%;\n  position: relative;\n  margin-bottom: 1em;\n  border-right: solid 4px #A9DFBF;\n  border-left: solid 4px #A9DFBF;\n  font-family: \"Space Mono\", monospace;\n  background-color: #F2F1EF;\n  padding: 0 3em 0 1em; }\n  pre:after {\n    content: attr(data-lang);\n    position: absolute;\n    right: 0;\n    top: 0;\n    padding: 0 0.25em 0.25em 0.25em;\n    color: black;\n    background-color: #ccc;\n    z-index: 2;\n    border-bottom-left-radius: 4px; }\n  pre.inline-block {\n    padding: 0.25em;\n    display: inline-block; }\n    pre.inline-block:after {\n      display: none; }\n\nkbd, var {\n  font-family: \"Questrial\", sans-serif;\n  background-color: #D5DBDB;\n  color: #000;\n  font-size: 90%; }\n  kbd:not(.escape--defaults), var:not(.escape--defaults) {\n    font-family: \"Space Mono\", monospace;\n    background-color: #ccc;\n    border-radius: 0.25em;\n    color: #000;\n    font-size: 90%;\n    padding-top: 0.1em;\n    padding-bottom: 0.1em;\n    display: inline-block; }\n\nsup {\n  vertical-align: super;\n  font-size: smaller; }\n\n.tac {\n  text-align: center; }\n\n.header {\n  display: flex;\n  flex-flow: row wrap;\n  width: 100%;\n  justify-content: space-between; }\n  .header-block {\n    flex-wrap: wrap;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    height: 100%;\n    align-self: center; }\n  .header-wrap {\n    position: relative;\n    height: 90vh;\n    width: 100vw;\n    color: #000;\n    background: url(\"https://unsplash.it/1500/1500?image=827\"), #A9CCE3;\n    background-origin: border-box;\n    background-clip: border-box;\n    background-size: cover;\n    background-repeat: no-repeat;\n    display: flex;\n    flex-wrap: wrap;\n    flex-direction: column;\n    justify-content: center; }\n    .header-wrap:after {\n      position: absolute;\n      bottom: 0;\n      right: 0;\n      content: '\\A9   Kyle Hamlin Photography';\n      color: #fff;\n      font-size: 80%;\n      opacity: 0.3; }\n  .header-image {\n    align-self: center; }\n    .header-image-pic {\n      border-top-right-radius: 50%;\n      border-bottom-left-radius: 50%;\n      box-shadow: 0 0 1em #D1E2FB; }\n  .header-name, .header-lead {\n    background-color: #fff;\n    padding: 0.5em;\n    box-shadow: 0 0 1em #D1E2FB; }\n\n.page {\n  display: flex;\n  flex-direction: column; }\n\n.header, .main, .footer {\n  margin: 0 auto; }\n  @media screen and (min-width: 16.667em) {\n    .header, .main, .footer {\n      width: 100vw; } }\n  @media screen and (min-width: 22.197em) {\n    .header, .main, .footer {\n      width: 90vw; } }\n  @media screen and (min-width: 31.25em) {\n    .header, .main, .footer {\n      width: 85vw; } }\n  @media screen and (min-width: 41.667em) {\n    .header, .main, .footer {\n      width: 70vw; } }\n  @media screen and (min-width: 50em) {\n    .header, .main, .footer {\n      width: 60vw; } }\n\n.main-wrap {\n  flex-grow: 2;\n  background-color: #fff;\n  color: #000; }\n\n.footer-wrap {\n  color: #000; }\n  .footer-wrap h4 {\n    margin: 0; }\n\n.main-wrap {\n  flex-grow: 2;\n  background-color: #fff;\n  color: #000; }\n\n.main-nav {\n  height: 10vh;\n  line-height: 10vh;\n  display: flex;\n  flex-flow: row nowrap;\n  justify-content: space-between; }\n  .main-nav h3 {\n    display: inline-block; }\n\n#about, #resume, #contact {\n  display: none; }\n\n#about:target,\n#resume:target,\n#contact:target {\n  display: block; }\n", ""]);
 	
 	// exports
 
